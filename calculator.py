@@ -162,3 +162,146 @@ def mula(a):
      elif sign=="=":
        print("\033[1mTOTAL :\033[0m",a)
        exit(0)
+except ValueError as m:
+     print('**Inavalid input***\n',m) 
+     mul=int(input("Enter Element :"))
+     a*=mul
+     print("Total :",a)
+     sign=input("operator:")
+    
+     if sign=='+':
+      adda(a)
+     elif sign=="-":
+      suba(a)
+     elif sign=="*":
+      mula(a)
+     elif sign=="/":
+      diva(a)
+     elif sign=="=":
+       print("\033[1mTOTAL :\033[0m",a)
+       exit(0)   
+
+
+def diva(a):
+ try:
+     div=int(input("Enter Element :"))
+     a/=div
+     print("Total :",a)
+     sign=input("operator:")
+    
+     if sign=='+':
+      adda(a)
+     elif sign=="-":
+      suba(a)
+     elif sign=="*":
+      mula(a)
+     elif sign=="/":
+      diva(a)
+     elif sign=="=":
+       print("\033[1mTOTAL :\033[0m",a)
+       exit(0)
+ except ZeroDivisionError as m:
+     print("**Zero Divison Error***\n",m)
+     div=int(input("Enter Divisor :"))
+     a/=div
+     print("Total :",a)
+     sign=input("operator:")
+    
+     if sign=='+':
+      adda(a)
+     elif sign=="-":
+      suba(a)
+     elif sign=="*":
+      mula(a)
+     elif sign=="/":
+      diva(a)
+     elif sign=="=":
+      
+       print("\033[1mTOTAL :\033[0m",a)
+    
+       exit(0)
+
+def all():
+ try:
+   no=1 
+   print("||| MULTIPLE OPERATORS |||||")
+   for i in range(no):
+     a=int(input("Enter Element :"))
+     sign=input("operator:")
+     if sign=='+':
+      adda(a)
+     elif sign=="-":
+      suba(a)
+     elif sign=="*":
+      mula(a)
+     elif sign=="/":
+      diva(a)
+     elif sign=="=":
+       exit(0)
+     else:
+       print("*Inavalid choice***")
+       all()
+ except ValueError as m:
+   print('**Inavalid input***\n',m) 
+   no=1 
+   for i in range(no):
+     a=int(input("Enter Element :"))
+     sign=input("operator:")
+     if sign=='+':
+      adda(a)
+     elif sign=="-":
+      suba(a)
+     elif sign=="*":
+      mula(a)
+     elif sign=="/":
+      diva(a)
+     elif sign=="=":
+       exit(0)
+try:
+ sel=int(input("Enter N0::"))
+ def one():
+  if sel==1:     
+   print("||| SINGLE OPERATOR |||||")
+   op=input("CHOOSE OPERATOR:")
+    
+   if op=='+':
+    add()
+   elif op=="-":
+    sub()
+   elif op=="*":
+    mul()
+   elif op=="/":
+    div()
+   else:
+    print("Invalid choice")
+    one()
+  elif sel==2:
+    all()
+  else:
+    one()
+except ValueError as m:
+   print("** Invalid input **\n",m)
+   sel=int(input("Enter N0::"))
+   if sel==1:     
+     print("||| SINGLE OPERATOR |||||")
+     op=input("CHOOSE OPERATOR:")
+    
+     if op=='+':
+      add()
+     elif op=="-":
+      sub()
+     elif op=="*":
+      mul()
+     elif op=="/":
+      div()
+     else:
+      print("Invalid choice")
+      one()
+   elif sel==2:
+    all()
+   else:
+     one()
+
+one()
+
+#python
