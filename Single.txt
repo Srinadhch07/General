@@ -1,0 +1,36 @@
+  class Single
+ {
+     static public void main(String args[])
+     {
+         child obj1=new child();
+         obj1.show(-100);
+         obj1.display();
+     }
+ }
+
+class parent
+{
+	int a;
+	void show(int a)
+	{
+		this.a=a;
+	}
+}
+class child extends parent
+{
+	void display()
+	{
+		System.out.print("A ="+a);
+	}
+}
+/*
+public class Single
+{
+	static public void main(String args[])
+	{
+		child obj1=new child();
+		obj1.show(-100);
+		obj1.display();
+	}
+}
+*/

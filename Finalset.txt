@@ -1,0 +1,18 @@
+//Written by SRINADHCH07
+/*programs explain about final keyword as variable/method/class*/
+final class parent    // class can't extended further
+{
+  final  void hello() // This method can't be overridded if there chance for inheritance
+	{   final int a=10; 		// a value cannot changed
+		System.out.println("*Final class*");
+	}
+}
+
+public class Finalset
+{
+	public static void main(String arhs [])
+	{
+		parent obj=new parent();
+		obj.hello();
+	}
+}

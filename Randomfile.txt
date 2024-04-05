@@ -1,0 +1,14 @@
+//program on Random ACCESS FILES
+import java.io.IOException;
+import java.io.RandomAccessFile;
+public class Randomfile
+{
+	public static void main(String [] sri) throws IOException
+	{	
+		RandomAccessFile file=new RandomAccessFile("stream.txt","rw");
+		file.seek(file.length());
+		file.writeBytes("hello");
+		file.close();
+		System.out.println("It worked");
+	}
+}

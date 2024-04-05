@@ -1,0 +1,22 @@
+class parent
+{
+	parent()
+	{
+		System.out.println("heyyyy broooo !!!");
+	}
+}
+class child extends parent
+{
+	void ediot()
+	{
+		System.out.println("yeshh am an ediot that's why am speaking to you !!!");
+	}
+}
+public class Superconstructors
+{
+		public  static void main(String [] args)
+		{
+			child obj=new child();
+			obj.ediot();
+		}
+}

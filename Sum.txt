@@ -1,0 +1,25 @@
+import java.util.*;
+public class Sum
+{
+	public  static void main(String[] args)
+	{
+		int s=0,o=0;
+		Scanner r=new Scanner(System.in);
+		System.out.println("Enter the number :");
+		int n=r.nextInt();
+		for(int i=1;i<=n;i++)
+		{
+		if (i%2==0)
+		s+=i;
+		
+		else
+		
+		o+=i;
+
+		}
+				System.out.println("Total odd:"+o);
+		System.out.println("Total Even :"+s);
+
+		}
+	}
+
