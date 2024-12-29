@@ -1,2 +1,2 @@
-# raw_codes
-In this Repo,it contains realworld problems solved codes someother short codes
+# General Codes
+This repository consists general problem and experimented codes on various topics.
